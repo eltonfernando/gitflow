@@ -2,7 +2,7 @@ import json
 from hikvisionapi import Client
 cam = Client("http://192.168.237.120", "admin", "ac22446688", timeout=10)
 
-__VERSION__ = "0.0.1"
+__VERSION__ = "0.1.0"
 print(f"Version: {__VERSION__}")
 def get_frame(response):
     response = cam.Streaming.channels[102].picture(method="get", type="opaque_data")
