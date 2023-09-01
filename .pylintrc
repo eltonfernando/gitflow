@@ -418,8 +418,10 @@ disable=raw-checker-failed,
         logging-fstring-interpolation,
         no-member,
         unrecognized-option,
-        C0114, # missing-module-docstring
-        C0115, # Catching too general exception Exception
+        broad-exception-caught,
+        missing-module-docstring,
+        syntax-error,
+        import-error
 
 
 # Enable the message, report, category or checker with the given id(s). You can
