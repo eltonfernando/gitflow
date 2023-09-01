@@ -1,0 +1,9 @@
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_files = [
+    "main.py:__VERSION__",
+    ".cz.toml:version"
+]
+version = "0.0.1"
